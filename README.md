@@ -16,7 +16,6 @@ The start script runs webpack in watch mode, and nodemon, so any changes you mak
 
 ### 2-1. Sequelize
 
-```
 - Define a Puppy model
   - Should have a name column
     - type should be STRING
@@ -35,11 +34,13 @@ The start script runs webpack in watch mode, and nodemon, so any changes you mak
     - Hint 2: strings have a trim method (myString.trim()) which remove leading & trailing whitespace
     - Hint 3: strings have toLowerCase and toUpperCase methods
     - Hint 4: strings have a substring method
+
   - Should have a method that allows us to find all the puppies in a specific puppy's family/pack (the other puppies that belong to a puppy's owner)
     - Create an instance method called 'findPackmates'
     - It should return a promise for all the puppies that share the same ownerId as the specific puppy
     - Hint 1: But be sure to not include the puppy itself, just its packmates/siblings
     - Hint 2: There may be a [Sequelize operator](http://docs.sequelizejs.com/manual/tutorial/querying.html#operators) that could help!
+
   - Should have a method that finds only very popular puppies
     - Create a class method called 'findPopular'
     - It should return a promise for all the puppies who have 5 or more likes
